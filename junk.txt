@@ -1,3 +1,5 @@
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 elif (inputn == "debug-commandline"):
 		print("Entering debug mode...")
 
@@ -11,4 +13,4 @@ inputx = str()
 
 print("(string) inputx = ", inputx)
 
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

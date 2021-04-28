@@ -15,7 +15,7 @@ def Variables_0():
 	print("(floating point) answer = ", answer)
 	print("(string) selectFile = ", selectFile)
 
-print("Welcome to ccDOS!\n")
+print("Welcome to yrnDOS!\n")
 
 while (inputn != "shut"):
 	inputn = input("input> ")
@@ -52,9 +52,13 @@ while (inputn != "shut"):
 	
 	elif (inputn == "file-read"):
 		selectFile = input("Insert file directory: ")
-		filemanipulator.readFile(selectFile)
+		filemanipulator.fileAction.readFile(selectFile)
 
-	elif (inputn == "aaes"):
+	elif (inputn == "file-append"):
+		selectFile = input("Insert file directory: ")
+		filemanipulator.fileAction.appendFile(selectFile)
+
+	elif (inputn == "cookie"):
 		print("You found the secret! :O")
 		print("Here's a cookie: \U0001F36A")
 
