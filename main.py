@@ -13,6 +13,7 @@ def Variables_0():
 	print("(integer) number1 = ", number1)
 	print("(integer) number2 = ", number2)
 	print("(floating point) answer = ", answer)
+	print("(string) selectFile = ", selectFile)
 
 print("Welcome to ccDOS!\n")
 
