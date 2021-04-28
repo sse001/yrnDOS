@@ -25,6 +25,9 @@ while (inputn != "shut"):
 	
 	elif (inputn == "V_0"):
 		Variables_0()
+	
+	elif (inputn == "help"):
+		print("Commands: shut, help, basic-add, basic-subtract, basic-multiply, basic-divide, file-read, file-append")
 
 	elif (inputn == "basic-add"):
 		number1 = calculator.basicCalculator.basicNumberInput()
