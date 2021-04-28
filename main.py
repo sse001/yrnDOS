@@ -1,9 +1,11 @@
 import calculator
+import filemanipulator
 
 inputn = str()
 number1 = int()
 number2 = int()
 answer = float()
+selectFile = str()
 
 def Variables_0():
 	print("Current Variable Configurations in 'main.py' (GLOBAL):")
@@ -46,6 +48,10 @@ while (inputn != "shut"):
 		number2 = calculator.basicCalculator.basicNumberInput()
 		answer = calculator.basicCalculator.basicDivision(number1, number2)
 		print("Answer:", answer)
+	
+	elif (inputn == "file-read"):
+		selectFile = input("Insert file directory: ")
+		filemanipulator.readFile(selectFile)
 
 	elif (inputn == "aaes"):
 		print("You found the secret! :O")
