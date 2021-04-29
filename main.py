@@ -5,7 +5,7 @@ inputn = str()
 number1 = int()
 number2 = int()
 answer = float()
-selectFile = str()
+selectForm = str()
 
 def Variables_0():
 	print("Current Variable Configurations in 'main.py' (GLOBAL):")
@@ -13,7 +13,7 @@ def Variables_0():
 	print("(integer) number1 = ", number1)
 	print("(integer) number2 = ", number2)
 	print("(floating point) answer = ", answer)
-	print("(string) selectFile = ", selectFile)
+	print("(string) selectForm = ", selectForm)
 
 print("Welcome to yrnDOS!\n")
 
@@ -27,7 +27,7 @@ while (inputn != "shut"):
 		Variables_0()
 	
 	elif (inputn == "help"):
-		print("Commands: shut, help, basic-add, basic-subtract, basic-multiply, basic-divide, file-read, file-append")
+		print("Commands: shut, help, basic-add, basic-subtract, basic-multiply, basic-divide, file-read, file-append, file-write, file-create, file-delete, dir-delete")
 
 	elif (inputn == "basic-add"):
 		number1 = calculator.basicCalculator.basicNumberInput()
@@ -54,12 +54,28 @@ while (inputn != "shut"):
 		print("Answer:", answer)
 	
 	elif (inputn == "file-read"):
-		selectFile = input("Insert file directory: ")
-		filemanipulator.fileAction.readFile(selectFile)
+		selectForm = input("Insert file directory: ")
+		filemanipulator.fileAction.readFile(selectForm)
 
 	elif (inputn == "file-append"):
-		selectFile = input("Insert file directory: ")
-		filemanipulator.fileAction.appendFile(selectFile)
+		selectForm = input("Insert file directory: ")
+		filemanipulator.fileAction.appendFile(selectForm)
+	
+	elif (inputn == "file-write"):
+		selectForm = input("Insert file directory: ")
+		filemanipulator.fileAction.writeFile(selectForm)
+	
+	elif (inputn == "file-create"):
+		selectForm = input("Name of file: ")
+		filemanipulator.fileAction.createFile(selectForm)
+	
+	elif (inputn == "file-delete"):
+		selectForm = input("Insert file directory: ")
+		filemanipulator.fileAction.deleteFile(selectForm)
+	
+	elif (inputn == "dir-delete"):
+		selectForm = input("Insert directory: ")
+		filemanipulator.fileAction.deleteFolder(selectForm)
 
 	elif (inputn == "cookie"):
 		print("You found the secret! :O")

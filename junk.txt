@@ -1,16 +1,1 @@
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
-elif (inputn == "debug-commandline"):
-		print("Entering debug mode...")
-
-		while (inputx != "base-commandline"):
-			inputx = input("debug> ")
-
-			if (inputx == "dV_0"):
-				debugVariables_0()
-
-inputx = str()
-
-print("(string) inputx = ", inputx)
-
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Hello, world! What a nice environment!
